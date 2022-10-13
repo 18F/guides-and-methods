@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    
+
+<!-- site.url: http://0.0.0.0:4000 -->
+<!-- site.baseurl: /site -->
+<!-- siteurl: http://0.0.0.0:4000 -->
+
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="vmVo2wbQpKGMHVpllQP7bQ0w5gICWD356VH9DNbv5f4" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Creator -->
+<meta name="twitter:creator" content="@18F">
+<!-- Title -->
+
+  <title>18F: Digital service delivery | Agile lexicon</title>
+  <meta property="og:title" content="18F: Digital service delivery | Agile lexicon" />
+  <meta name="twitter:title" content="18F: Digital service delivery | Agile lexicon">
+
+
+<!-- Twitter Site -->
+<meta name="twitter:site" content="@18F" />
+
+<!-- Description -->
+
+  <meta name="description" content="&lt;p&gt;The goal of this Lexicon is to provide 18F and our partners a  common language for discussion of Agile processes. The definitions are as simple, flexible, and inclusive as we could make them.&lt;/p&gt;
+">
+  <meta property="og:description" content="&lt;p&gt;The goal of this Lexicon is to provide 18F and our partners a  common language for discussion of Agile processes. The definitions are as simple, flexible, and inclusive as we could make them.&lt;/p&gt;
+" />
+  <meta property="twitter:description" content="&lt;p&gt;The goal of this Lexicon is to provide 18F and our partners a  common language for discussion of Agile processes. The definitions are as simple, flexible, and inclusive as we could make them.&lt;/p&gt;
+" />
+
+
+<!-- Image -->
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+  <meta property="og:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+
+
+<!-- Author -->
+
+
+<!-- Date -->
+
+  <meta name="date" content="2022-10-06 01:54:51 -0400"" scheme="YYYY-MM-DD">
+
+
+<!-- Tags -->
+
+  <meta name="keywords" content="">
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/site/guides/agile/agile-lexicon/" />
+
+<!--[if lt IE 9]>
+<script src="/site/assets/js/vendor/html5shiv.js"></script>
+<script src="/site/assets/js/vendor/respond.js"></script>
+<script src="/site/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+
+<!--  Touch icon for iOS 2.0+ and Android 2.1+ -->
+<link rel="apple-touch-icon-precomposed" href="/site/assets/img/favicons/18F-Logo-152.png">
+
+<!--  Desktop icon -->
+<link rel="icon" href="/site/assets/img/favicons/18F-Logo-152.png" type="image/png">
+
+  <!--  More info: https://github.com/audreyr/favicon-cheat-sheet -->
+
+<!-- CSS
+=================================================== -->
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/site/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+      
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48605964-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // `forceSSL` was used for analytics.js (the older Google Analytics script). It isn't documented for gtag.js, but the term occurs in the gtag.js code; figure it doesn't hurt to leave it in. -@afeld, 5/29/19
+  gtag('config', 'UA-48605964-1', { 'anonymize_ip': true, 'forceSSL': true });
+</script>
+
+
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA&subagency=TTS,18F"></script>
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+  <section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/site/assets/uswds/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br/>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-https.svg" role="img" alt="Https">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br/>
+              A <strong>lock</strong> (
+<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>
+) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic usa-header--basic-megamenu" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/site/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://18f.gsa.gov/assets/img/logos/18f-logo.svg"
+              alt="18F">
+          
+          <!-- em for logo-text from uswds-jekyll template removed -->
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <!-- usa-nav__inner div removed to fit navigation -->
+    <nav role="navigation" class="usa-nav">
+        <button class="usa-nav__close">
+          <img src="/site/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/what-we-deliver/">
+                <span>What we deliver</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/how-we-work/">
+                <span>How we work</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/guides/">
+                <span>Guides</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   usa-current" href="/site/blog/">
+                <span>Blog</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/contact/">
+                <span>Contact</span>
+              </a>
+            
+          </li>
+          
+
+        </ul>
+        
+
+        
+          
+          
+            <form
+  accept-charset="UTF-8"
+  action="https://search.usa.gov/search"
+  id="search_form"
+  method="get"
+  class="usa-search usa-search--small js-search-form">
+  <input
+    name="utf8"
+    type="hidden"
+    value="&#x2713;" />
+  <input
+    id="affiliate"
+    name="affiliate"
+    type="hidden"
+    value="18F-site" />
+  <div role="search">
+    <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
+    <input
+      autocomplete="off"
+      class="usa-input usagov-search-autocomplete"
+      id="query"
+      name="query"
+      type="search" />
+    <button
+      class="usa-button"
+      type="submit"
+      name="commit">
+      <span class="usa-sr-only">Search</span>
+    </button>
+  </div>
+</form>
+
+          
+        
+
+        
+
+
+        </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" ="">
+        
+
+
+
+
+
+
+
+
+<div class="grid-container">
+  <nav class="usa-breadcrumb" aria-label="Breadcrumbs">
+    <ol class="usa-breadcrumb__list">
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/" class="usa-breadcrumb__link">
+          <span>Home</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/guides/" class="usa-breadcrumb__link">
+          <span>Guides</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/guides/agile/" class="usa-breadcrumb__link">
+          <span>Agile</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <span></span>
+      </li>
+    </ol>
+  </nav>
+</div>
+
+
+
+<div class="grid-container usa-section">
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-2"><ul>
+        
+        <li>
+          <a href="/site/guides/agile/18f-agile-based-project-approach/">18F Agile based project approach</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/agile/agile-fundamentals/">Agile fundamentals</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/agile/agile-is-a-thing-already/">Agile is a thing already</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/agile/agile-is-something-you-are-not-something-you-do/">Agile is something you are, not something you do</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/agile/agile-lexicon/">Agile lexicon</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/agile/">Agile Guide Introduction</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/agile/modern-software-product-development/">Modern Software Product Development</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="tablet:grid-col-8">
+      <article id="main-content" "class=" post-article" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+          <h1 itemprop="name headline">Agile lexicon</h1>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          
+
+          <p>The goal of this Lexicon is to provide 18F and our partners a  common language for discussion of Agile processes. The definitions are as simple, flexible, and inclusive as we could make them.</p>
+
+<h2 id="high-level-concepts">High Level Concepts</h2>
+<ul>
+  <li><strong>Agile</strong> - pertaining to the Agile Manifesto and/or Agile Principles (http://agilemanifesto.org). Agile is a set of values and principles that describe a way of working that promotes continuous learning and user-focused value delivery.</li>
+</ul>
+
+<h2 id="agile-disciplines">Agile Disciplines:</h2>
+<ul>
+  <li><strong>Lean UX</strong> - a set of design principles which includes early customer validation, collaborative design, defining key success metrics (for more info see: Lean UX manifesto).</li>
+  <li><strong>Scrum</strong> - a framework for Agile product development centered around self-organizing team, customer focus, and responding to change.</li>
+  <li><strong>XP (Extreme Programming)</strong> - an agile software development approach that emphasizes business results first, using pair programming and test-driven development, delivering value continuously</li>
+  <li><strong>Kanban</strong> - a process management and diagnostic tool that can be used with both Agile and non-Agile environments.  A Kanban board can be a helpful tool for introducing a few Agile behaviors to a team less familiar with the methodology.</li>
+</ul>
+
+<h2 id="roles">Roles</h2>
+<ul>
+  <li><strong>Partner</strong> - The agency with whom we are working. 18F doesn’t have “clients,” we have partners. We deliver something together with agency partner.</li>
+  <li><strong>Client</strong> - When the government hires a vendor to perform services, we are a “client” to that services organization. We cannot delegate responsibility for success to the vendor. In keeping with the Agile principle of small, empowered teams, at least one person from the Client team must be an active part of the Agile team. (For an agency or organization working directly with 18F, see “Partner”.)</li>
+  <li><strong>Customer</strong> - the purchaser of a (digital) product/service.</li>
+  <li><strong>User</strong> - the consumer of a product/service</li>
+  <li><strong>Product Owner (PO)</strong> - owns the product vision and incorporates stakeholder feedback to set priorities and manage the backlog</li>
+  <li><strong>Stakeholder</strong> - an interested party whose buy-in you want (or need) but is not the PO</li>
+</ul>
+
+<h2 id="how-we-talk-about-the-work">How we talk about the work:</h2>
+<ul>
+  <li><strong>Prototype</strong> - A functional representation of a feature or group of features not meant to be sold to customers, but rather to get feedback from potential users or customers.</li>
+  <li><strong>Minimum Viable Product (MVP)</strong> - The smallest usable thing you need to start validating the actual idea of the business or product. The very first increment of the build/measure/learn cycle (Zappos example in The Lean Startup.) It’s there to help demonstrate the market exists for a particular idea. The term “MVP” means something different to virtually everyone, so be sure to get clarity from the person or persons using the term in conversations.</li>
+  <li><strong>Release</strong> - a usable increment of customer value delivered to users in the wild.</li>
+  <li><strong>User story</strong> - a description of functionality or value written from the perspective of the user.  Each story should be made available to users as an incremental improvement; however, it often makes sense to collect a set of user stories that will be promoted or validated together as a release.</li>
+  <li><strong>Definition of done</strong> -  A working agreement among the team detailing the standard for achieving a “Done” Product Backlog Item (i.e, user story). This applies to all user stories and includes meeting acceptance criteria.</li>
+  <li><strong>Acceptance criteria</strong> - A set of conditions detailing the functional goals of the user story. This is a user story-specific description of when that story is done. The acceptance criteria could be used to demo the user story or to write an automated test.</li>
+</ul>
+
+<h2 id="concepts">Concepts:</h2>
+<ul>
+  <li><strong>Non-Functional Requirements (NFRs)</strong>  - desired characteristics of a product that do not deliver direct user value, such as load handling, performance, browser compatibility, or responsive design.</li>
+  <li><strong>Test coverage</strong> - the portion of the code that is actually exercised when a certain set of tests are run. Usually expressed as a percentage. Often specified as a quality standard, as in, “you must have 90% code coverage to consider your tests adequate.”</li>
+  <li><strong>Unit tests</strong> - Automated tests that concentrate on verifying that the code works as written, and which act as safety flags in high-churn agile development environments with constant check-ins, changes, and multiple developers in the same code. They are best run automatically as part of every build.</li>
+  <li><strong>Integration tests</strong> - Also called Feature Tests, Acceptance Tests, and Regression Tests, these are tests that validate a complete, integrated software product against its business goals. They test the user-visible behavior of the software.</li>
+  <li><strong>Continuous Integration</strong> - Running automated tests on every code submission, within an integrated codebase.</li>
+  <li><strong>Continuous Deployment</strong> - Deploying software automatically <em>to production</em> if automated tests pass.</li>
+  <li><strong>User research:</strong> a range of techniques are used to understand the target audience and the problems that they have. Contextual inquiry, involving direct observation, is favored over interviews.
+Usability testing: Observation of people attempting to use a product, prototype or mockup.  See Design Method: Usability Testing</li>
+  <li><strong>Prototype:</strong> A term that means something different to everyone. You want to come to common understanding about this word early on in any project; but it should be noted here that prototypes should not be referred to as a deliverable and are best described as a supporting activity that promotes learning.</li>
+</ul>
+
+<h2 id="process-words-how-we-work">Process words, how we work:</h2>
+<ul>
+  <li><strong>Sprint</strong> - the unit of iteration in scrum: a short, fixed interval in which an agile team commits to and delivers a piece of customer value from the backlog.</li>
+  <li><strong>Sprint Backlog Item</strong> - A more granular item than one one would find in a product backlog. It could be a task, chore, bug, or small or finely sliced user story. These items are usually what you find in a trello or waffle board.</li>
+  <li><strong>Product Backlog</strong> - A prioritized list of user value to be produced.</li>
+  <li><strong>Scrum Master</strong> - the team member who is responsible for the team’s rituals and process, who ensures the team can execute on its commitments by removing blockers and facilitating activities like the daily standup, sprint planning, and retrospectives.</li>
+  <li><strong>Velocity</strong> - Any measure of the value produced during each sprint.  Average velocity can help guide time-boxed iterations.  Velocity is most useful for planning and tracking purposes and does not measure team productivity or performance.</li>
+  <li><strong>Daily Standup (aka Daily Scrum)</strong> - A short, daily meeting during which the team self-organizes for the day. Never more than 15 minutes. Information exchanged can vary but always covers what each team member did yesterday, what they plan to do today, and what if anything is blocking their work.</li>
+  <li><strong>Retrospective</strong> -  A meeting of the whole team held once per sprint, wherein the team reflects on what happened in the iteration and identifies actions for team improvement going forward.  This is a critical part of the Agile continuous improvement, as contrasted with a post-mortem which happens only after launch, which limits the opportunity for applying lessons learned.</li>
+  <li><strong>Kickoff meeting</strong> - The meeting held with all stakeholders before work begins.   The kickoff meeting helps align the team on the project goal, terminology, the day to day process expectations, and roles and responsibilities.</li>
+  <li><strong>Waterfall/SDLC</strong> - a sequential design process, used in digital development processes, in which progress is seen as flowing steadily downwards (like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, production/implementation and maintenance. Primarily used in instances where requirements are not expected to change and user-designer interaction is not desired. (Source: https://en.wikipedia.org/wiki/Waterfall_model)</li>
+</ul>
+
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+
+<section class="post-pagination grid-container">
+  <div class="grid-row grid-gap">
+    <div class="grid-col-6">
+      
+      <a href="/site/guides/agile/agile-is-something-you-are-not-something-you-do/">
+        <span class="link-arrow-left">
+          <svg class="icon caret" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 444.531 444.531" style="enable-background:new 0 0 444.531 444.531;" xml:space="preserve" role="img" aria-hidden="true">
+  <title>Arrow left</title>
+  <desc>Arrow pointing to the left</desc>
+  <g>
+    <path d="M213.13,222.409L351.88,83.653c7.05-7.043,10.567-15.657,10.567-25.841c0-10.183-3.518-18.793-10.567-25.835   l-21.409-21.416C323.432,3.521,314.817,0,304.637,0s-18.791,3.521-25.841,10.561L92.649,196.425   c-7.044,7.043-10.566,15.656-10.566,25.841s3.521,18.791,10.566,25.837l186.146,185.864c7.05,7.043,15.66,10.564,25.841,10.564   s18.795-3.521,25.834-10.564l21.409-21.412c7.05-7.039,10.567-15.604,10.567-25.697c0-10.085-3.518-18.746-10.567-25.978   L213.13,222.409z" fill="#046b99"/>
+  </g>
+</svg>
+
+          Previous guide page
+        </span>
+        <h5>&ldquo;Agile is something you are, not something you do&rdquo;</h5>
+      </a>
+      
+    </div>
+    <div class="grid-col-6">
+      
+      <a href="/site/guides/agile/">
+        <span class="link-arrow-right">
+          Next guide page
+          <svg class="icon caret" xmlns="http://www.w3.org/2000/svg" width="444.819" height="444.819" viewBox="0 0 444.819 444.819" role="img" aria-hidden="true">
+  <title>Arrow right</title>
+  <desc>Arrow pointing to the right</desc>
+  <path fill="#046b99" d="M352.025 196.712L165.885 10.848C159.028 3.615 150.468 0 140.185 0s-18.84 3.62-25.696 10.848l-21.7 21.416c-7.045 7.043-10.567 15.604-10.567 25.692 0 9.897 3.52 18.56 10.566 25.98L231.544 222.41 92.785 361.168c-7.04 7.043-10.563 15.604-10.563 25.693 0 9.9 3.52 18.566 10.564 25.98l21.7 21.417c7.043 7.043 15.612 10.564 25.697 10.564 10.09 0 18.656-3.52 25.697-10.564L352.025 248.39c7.046-7.423 10.57-16.084 10.57-25.98.002-10.09-3.524-18.655-10.57-25.698z"/>
+</svg>
+
+        </span>
+        <h5>&ldquo;Agile Guide Introduction&rdquo;</h5>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="usa-section featured-posts ">
+  <div class="grid-container">
+  
+  <ul class="grid-row grid-gap">
+  
+  </ul>
+  </div>
+</section>
+
+<section class="usa-section bg-primary-dark">
+  <div class="grid-container">
+      <div class="usa-graphic-list__row grid-row grid-gap">
+          <div class="usa-media-block tablet:grid-col">
+            <img class="usa-media-block__img"  src="/site/assets/img/talk-bubble.svg" alt="Alt text">
+            <div class="usa-media-block__body">
+              <p>Work with us to plan successful projects, choose better vendors, build custom software, or learn how to work in new ways.</p>
+              <a class="usa-button usa-button--secondary" href="/site/contact/">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+    
+
+    
+
+    <footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lightest">
+    <div class="grid-container">
+      <div class="grid-row grid-gap padding-y-4">
+        <div class="tablet:grid-col-3">
+          <h4>Work with us</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/about/">About 18F</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/what-we-deliver">Case studies</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/how-we-work/">How we work</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/partnership-principles/">Partnership principles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Resources</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/blog/">Blog</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/guides/">Guides</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://methods.18f.gov/">18F Methods</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Policies</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/linking-policy/">Linking policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/open-source-policy/">Open source policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/vulnerability-disclosure-policy/">Vulnerability disclosure</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/code-of-conduct/">Code of conduct</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Contact us</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/contact/">Get in touch</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/about/#for-press">Press</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://github.com/18F/18f.gsa.gov/issues/new">Report a bug</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/join/">Join 18F</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__contact-links mobile-lg:grid-col-12">
+          <div class="usa-footer grid-row grid-gap-1">
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/18F">
+                <span>Twitter</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--github" href="https://github.com/18F">
+                <span>Github</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--linkedin" href="https://www.linkedin.com/company/gsa18f/">
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="Agency identifier"
+  >
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__logos">
+        <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+          <img
+            class="usa-identifier__logo-img"
+            src="/site/assets/img/logos/gsa-logo-w100.png"
+            alt="GSA logo"
+            role="img"
+          />
+        </a>
+      </div>
+      <div class="usa-identifier__identity text-base-lightest" aria-label="Agency description">
+        <p class="usa-identifier__identity-domain">18f.gsa.gov</p>
+        <p class="usa-identifier__identity-disclaimer text-base-lightest">An official website of the
+          <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">
+            GSA’s Technology Transformation Services
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <nav
+    class="usa-identifier__section usa-identifier__section--required-links"
+    aria-label="Important links"
+  >
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about"
+            title="About GSA"
+          >
+            About GSA
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/accessibility-aids"
+            title="Accessibility support"
+          >
+            Accessibility support
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+            title="FOIA requests"
+          >
+            FOIA requests
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about-us/organization/office-of-civil-rights/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+            title="No FEAR Act data"
+          >
+            No FEAR Act data
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsaig.gov/"
+            title="Office of the Inspector General"
+          >
+            Office of the Inspector General
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/reports/budget-performance"
+            title="Performance reports"
+          >
+             Performance reports
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/website-policies#privacy"
+            title="Privacy Policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description text-base-lightest">Looking for U.S. government information and services?</div>
+      <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+    </div>
+  </section>
+</div>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/site/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+      var usasearch_config = { siteHandle:"18F-site" };
+
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "//search.usa.gov/javascripts/remote.loader.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+
+//]]>
+</script>
+
+
+
+
+
+
+  </body>
+</html>
