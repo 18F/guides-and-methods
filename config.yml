@@ -1,0 +1,56 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:2.7-browsers
+    environment:
+      LANG: "en_US.UTF-8"
+      LANGUAGE: "en_US.UTF-8"
+      LC_ALL: "en_US.UTF-8"
+    steps:
+      - run:
+          name: Fix locales
+          command: |
+            sudo locale-gen en_US.UTF-8
+            sudo locale-gen en en_US en_US.UTF-8
+            sudo dpkg-reconfigure locales
+      - checkout
+      - restore_cache:
+          keys:
+          - v2-dependencies-bundler-{{ checksum "Gemfile.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v2-dependencies-bundler-
+      - run:
+          name: Bundle install dependencies
+          command: |
+            bundle config set path 'vendor/bundle'
+            bundle install --jobs=4 --retry=3
+      - save_cache:
+          paths:
+            - vendor/bundle
+          key: v2-dependencies-bundler-{{ checksum "Gemfile.lock" }}
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-npm-{{ checksum "package-lock.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-npm-
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-npm-{{ checksum "package-lock.json" }}
+      - run: bundle exec jekyll build
+      - run: npm run htmlproofer
+      - run:
+          name: Run rspec
+          command: bundle exec rspec `pwd`/spec/
+      - run:
+          name: Run pa11yci
+          command: ./serve-pa11yci && npm run pa11y-ci
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build

@@ -1,0 +1,17 @@
+scss:
+  enabled: true
+  config_file: .scss-lint.yml
+
+sass-lint:
+  enabled: false
+
+jshint:
+  enabled: false
+
+eslint:
+  enabled: true
+  config_file: .eslintrc
+  ignore_file: .eslintignore
+
+ruby:
+  config_file: .rubocop.yml
