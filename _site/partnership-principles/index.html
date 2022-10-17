@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    
+
+<!-- site.url: http://0.0.0.0:4000 -->
+<!-- site.baseurl: /site -->
+<!-- siteurl: http://0.0.0.0:4000 -->
+
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="vmVo2wbQpKGMHVpllQP7bQ0w5gICWD356VH9DNbv5f4" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Creator -->
+<meta name="twitter:creator" content="@18F">
+<!-- Title -->
+
+  <title>18F: Digital service delivery | 18F Partnership Principles</title>
+  <meta property="og:title" content="18F: Digital service delivery | 18F Partnership Principles" />
+  <meta name="twitter:title" content="18F: Digital service delivery | 18F Partnership Principles">
+
+
+<!-- Twitter Site -->
+<meta name="twitter:site" content="@18F" />
+
+<!-- Description -->
+
+  <meta name="description" content="&lt;p&gt;This guide will help you understand how your agency team and 18F can work together successfully. You’ll learn what to expect and how our two teams will form a fed-to-fed partnership that may be different from work you’ve done with private vendors. Many of these ideas build on the &lt;a href=&quot;https://playbook.cio.gov&quot;&gt;U.S. Digital Services Playbook&lt;/a&gt;.&lt;/p&gt;
+">
+  <meta property="og:description" content="&lt;p&gt;This guide will help you understand how your agency team and 18F can work together successfully. You’ll learn what to expect and how our two teams will form a fed-to-fed partnership that may be different from work you’ve done with private vendors. Many of these ideas build on the &lt;a href=&quot;https://playbook.cio.gov&quot;&gt;U.S. Digital Services Playbook&lt;/a&gt;.&lt;/p&gt;
+" />
+  <meta property="twitter:description" content="&lt;p&gt;This guide will help you understand how your agency team and 18F can work together successfully. You’ll learn what to expect and how our two teams will form a fed-to-fed partnership that may be different from work you’ve done with private vendors. Many of these ideas build on the &lt;a href=&quot;https://playbook.cio.gov&quot;&gt;U.S. Digital Services Playbook&lt;/a&gt;.&lt;/p&gt;
+" />
+
+
+<!-- Image -->
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+  <meta property="og:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+
+
+<!-- Author -->
+
+
+<!-- Date -->
+
+  <meta name="date" content="2022-10-12 23:28:02 -0400"" scheme="YYYY-MM-DD">
+
+
+<!-- Tags -->
+
+  <meta name="keywords" content="">
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/site/partnership-principles/" />
+
+<!--[if lt IE 9]>
+<script src="/site/assets/js/vendor/html5shiv.js"></script>
+<script src="/site/assets/js/vendor/respond.js"></script>
+<script src="/site/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+
+<!--  Touch icon for iOS 2.0+ and Android 2.1+ -->
+<link rel="apple-touch-icon-precomposed" href="/site/assets/img/favicons/18F-Logo-152.png">
+
+<!--  Desktop icon -->
+<link rel="icon" href="/site/assets/img/favicons/18F-Logo-152.png" type="image/png">
+
+  <!--  More info: https://github.com/audreyr/favicon-cheat-sheet -->
+
+<!-- CSS
+=================================================== -->
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/site/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+      
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48605964-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // `forceSSL` was used for analytics.js (the older Google Analytics script). It isn't documented for gtag.js, but the term occurs in the gtag.js code; figure it doesn't hurt to leave it in. -@afeld, 5/29/19
+  gtag('config', 'UA-48605964-1', { 'anonymize_ip': true, 'forceSSL': true });
+</script>
+
+
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA&subagency=TTS,18F"></script>
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+  <section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/site/assets/uswds/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br/>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-https.svg" role="img" alt="Https">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br/>
+              A <strong>lock</strong> (
+<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>
+) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic usa-header--basic-megamenu" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/site/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://18f.gsa.gov/assets/img/logos/18f-logo.svg"
+              alt="18F">
+          
+          <!-- em for logo-text from uswds-jekyll template removed -->
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <!-- usa-nav__inner div removed to fit navigation -->
+    <nav role="navigation" class="usa-nav">
+        <button class="usa-nav__close">
+          <img src="/site/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/what-we-deliver/">
+                <span>What we deliver</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/how-we-work/">
+                <span>How we work</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/guides/">
+                <span>Guides</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/blog/">
+                <span>Blog</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/contact/">
+                <span>Contact</span>
+              </a>
+            
+          </li>
+          
+
+        </ul>
+        
+
+        
+          
+          
+            <form
+  accept-charset="UTF-8"
+  action="https://search.usa.gov/search"
+  id="search_form"
+  method="get"
+  class="usa-search usa-search--small js-search-form">
+  <input
+    name="utf8"
+    type="hidden"
+    value="&#x2713;" />
+  <input
+    id="affiliate"
+    name="affiliate"
+    type="hidden"
+    value="18F-site" />
+  <div role="search">
+    <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
+    <input
+      autocomplete="off"
+      class="usa-input usagov-search-autocomplete"
+      id="query"
+      name="query"
+      type="search" />
+    <button
+      class="usa-button"
+      type="submit"
+      name="commit">
+      <span class="usa-sr-only">Search</span>
+    </button>
+  </div>
+</form>
+
+          
+        
+
+        
+
+
+        </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" ="">
+        
+  <section class="bg-primary-dark usa-section">
+    <div class="grid-container">
+      <div class="tablet:grid-col-9">
+        
+          <h1 class="section-heading section-heading-alt">18F Partnership Principles </h1>
+          <h2>Collaboration approaches to help your project succeed</h2>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<section class="grid-container usa-section  content-wide ">
+  
+  <div class="grid-row grid-gap">
+    <aside class="tablet:grid-col-4 margin-bottom-2 z-top bg-white sticky">
+      
+
+
+
+
+
+  
+
+
+<nav role="navigation" class="subnav sticky usa-accordion" aria-label="Secondary navigation">
+  
+  <ul class="usa-sidenav">
+    <li class="usa-sidenav__item">
+      <button class="usa-accordion__button"
+        aria-expanded="true"
+        aria-controls="subnav-list"
+      >
+      18F Partnership Principles
+      </button>
+    <ul id="subnav-list" class="usa-accordion__content usa-sidenav__sublist">
+      
+      <li class="usa-sidenav__item">
+        
+
+        
+        <a id="methodologies-link" class="subnav-anchor" href="/site/partnership-principles/#methodologies" >Methodologies</a>
+      </li>
+      
+      <li class="usa-sidenav__item">
+        
+
+        
+        <a id="tactics-link" class="subnav-anchor" href="/site/partnership-principles/#tactics" >Tactics</a>
+      </li>
+      
+      <li class="usa-sidenav__item">
+        
+
+        
+        <a id="questions-link" class="subnav-anchor" href="/site/partnership-principles/#questions" >Questions</a>
+      </li>
+      
+    </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+    </aside>
+    <section class="tablet:grid-col-8">
+      
+      <p>This guide will help you understand how your agency team and 18F can work together successfully. You’ll learn what to expect and how our two teams will form a fed-to-fed partnership that may be different from work you’ve done with private vendors. Many of these ideas build on the <a href="https://playbook.cio.gov">U.S. Digital Services Playbook</a>.</p>
+
+<p>The first thing you may notice when partnering with 18F is that your team will be heavily involved in the day-to-day work of the project. We’ve found these close partnerships that pair our technical expertise with your program knowledge are most likely to deliver projects that fulfill federal rules, stay within budget, and provide excellent value to the public. We’ve laid out some methodologies and tactics below that will guide the project.</p>
+
+<h3 id="methodologies-well-use-together">Methodologies we’ll use together</h3>
+
+<ul>
+  <li><a href="/site/partnership-principles/#letting-users-guide-our-work">Letting users guide our work</a></li>
+  <li><a href="/site/partnership-principles/#working-in-an-agile-way">Working in an agile way</a></li>
+  <li><a href="/site/partnership-principles/#building-in-the-open">Building in the open</a></li>
+</ul>
+
+<h3 id="tactics-well-use-together">Tactics we’ll use together</h3>
+
+<ul>
+  <li><a href="/site/partnership-principles/#understanding-your-problem-first">Understanding your problem first</a></li>
+  <li><a href="/site/partnership-principles/#partnering-with-an-empowered-product-owner">Partnering with an empowered product owner</a></li>
+</ul>
+
+<p>In this document, we’ll explain each idea and how it will influence our work together.</p>
+
+<p><a href="/site/partnership-principles/18FPartnershipPrinciples.pdf">Download a PDF version of the Principles here</a></p>
+
+<h1 id="methodologies">Methodologies</h1>
+
+<h2 id="letting-users-guide-our-work"><a name="letting-users-guide-our-work"></a>Letting users guide our work</h2>
+
+<p>For your project, the most important people are those who’ll use the product or service that we build together. They might be part of the public interacting with your agency for the first time, experienced outside stakeholders, or staff inside your organization. These people have goals to achieve and obstacles in their way. Together, we’ll ensure that the design, development, and implementation of your solution helps lower those obstacles and allows your users to be successful.</p>
+
+<h3 id="what-does-this-mean-for-you">What does this mean for you?</h3>
+
+<p>We’ll interview and observe users interacting with your service or product and use that information to help guide the team’s work. Later, our joint team will put real prototypes in the hands of users every couple weeks and interview them about whether the product is meeting their needs. This frequent testing with real users will help ensure that the product we build together is intuitive for them to use and solves the right problems. You know your program and mission best, and you’ll help identify and recruit users for the joint team to interview.</p>
+
+<h2 id="-working-in-an-agile-way"><a name="working-in-an-agile-way"></a> Working in an agile way</h2>
+
+<p>We develop software using <a href="https://pages.18f.gov/agile/">agile</a> and lean methodologies. These approaches are the norm in the private sector, and they differ considerably from basing work on requirement documents. Instead of determining all the necessary features up front, we’ll build the product in stages, testing along the way to ensure that we’re meeting user needs and responding quickly to any changes in requirements, goals, policy, or outside factors.</p>
+
+<p>It can be stressful to start a project without being able to clearly list the final features. But we will start out with a very clear sense of your goals, and our techniques will ensure that we hew to those goals closely, building on successes along the way. Our techniques will also give your agency good visibility into the project’s evolution, timeframe, and budget.</p>
+
+<h3 id="what-does-this-mean-for-you-1">What does this mean for you?</h3>
+
+<p>Every couple weeks, your team will work with the 18F team to generate a list of prioritized tasks. Then we’ll address several of these tasks and get feedback from users to help guide the next period of work.</p>
+
+<p>At each stage, we’ll jointly define metrics that we’ll use to test whether our work is supporting your goals. This approach allows our teams to stay both on target and flexible. The tradeoff is that the confidence we’ll gain is limited to work in the near future, and we won’t be able to say exactly what features will be in your solution by a certain date. But by regularly revisiting our desired outcomes and prioritizing the needs of your users, you’ll know that we’re building the most important functionality at every phase of the project.</p>
+
+<h2 id="building-in-the-open"><a name="building-in-the-open"></a>Building in the open</h2>
+
+<p>One of 18F’s core principles is to make our work available to the public whenever possible, magnifying the value of our joint efforts. We do this in two ways:</p>
+
+<ul>
+  <li>Using open source code in product development</li>
+  <li>Conducting project activities in publicly-viewable forums whenever possible</li>
+</ul>
+
+<p>These methods are proven to help build stronger services, save government resources, and better fulfill our duty to serve the public. Learn more from the <a href="https://sourcecode.cio.gov/">Federal Open Source Policy</a>.</p>
+
+<p>Of course, we’ll work together to ensure that any contracting, national security, personally identifiable, or other sensitive information is properly protected.</p>
+
+<h3 id="what-does-this-mean-for-you-2">What does this mean for you?</h3>
+
+<ul>
+  <li><strong>Security:</strong> Making source code available for public scrutiny can help improve the security of a product while allowing the team to maintain full control. (Again, we always do the necessary legwork to ensure the security of sensitive and confidential data.)</li>
+  <li><strong>Streamlined communications:</strong> Publishing research reports, documentation, and other artifacts about our project online makes it easier for our joint team to access it. When we work together, you won’t need to access our VPN or be located in a specific place to keep up with the project.</li>
+  <li><strong>Transparency:</strong> Working openly helps us proactively communicate about our progress with your stakeholders.</li>
+  <li><strong>Collaboration and network effects:</strong> Working with open source software allows us to build off work done by others. Sometimes this means we’re able to start with something already in progress, and sometimes it means we can improve on the work done elsewhere.</li>
+  <li><strong>Sustainability:</strong> The flexibility of open source software allows our teams to focus on building the best product rather than negotiating license agreements. In addition, relying on widely used tools and programming languages means you’ll be able to more easily hire qualified vendors or employees to support the product after 18F transitions off the project.</li>
+</ul>
+
+<h1 id="tactics">Tactics</h1>
+
+<h2 id="understanding-your-problem-first">Understanding your problem first<a name="understanding-your-problem-first"></a></h2>
+
+<p>The first thing we’ll do together is gain a shared understanding of your problem so that we can translate it into information that a technical team can use to build or buy a solution.</p>
+
+<h3 id="what-does-this-mean-for-you-3">What does this mean for you?</h3>
+
+<p>Most likely, our work together will start with a “Path Analysis.” A Path Analysis typically lasts eight to ten weeks, and we use that time to gain a deep understanding and shared vision for your problem. At the end of this phase, we’ll provide a roadmap forward that defines your problem in terms a technical team can use to hit the ground running.</p>
+
+<p>Other partners might take the time to do this, too. But we carve out this initial stage, rather than lumping it into the whole project, so that at the end of the phase, you have excellent documentation to build or buy an effective solution with any partner — whether that’s 18F or a private vendor. Indeed, if we determine we aren’t the best partner to meet your needs, we can help you get set up with another office within the Technology Transformation Services or help you hire a private vendor.</p>
+
+<h2 id="partnering-with-an-empowered-product-owner"><a name="partnering-with-an-empowered-product-owner"></a>Partnering with an empowered product owner</h2>
+
+<p>Achieving success depends on building a close working relationship between 18F and your team. To make that happen, we’ll work with an empowered <a href="https://playbook.cio.gov/#play6">product owner</a> from your agency. An empowered product owner is someone who understands your organization, the problem we’re solving, and can advocate for the product we ultimately build together. They’ll be responsible for establishing and carrying the long-term vision of the project, implementing a strategy, and guiding its progress, as informed by user research. This person will work closely with the 18F team as a subject matter expert on your agency and help us jointly navigate the complexities of interoffice and stakeholder relationships.</p>
+
+<h3 id="a-successful-product-owner-has">A successful product owner has:</h3>
+
+<ul>
+  <li><strong>Authority to make decisions:</strong> The product owner removes obstacles and helps the team work as quickly as they can. They make decisions independently and have sufficient authority to make changes large and small to the product without additional review from superiors.</li>
+  <li><strong>Time to work with us:</strong> The product owner is just as much a part of the team as designers, researchers, and developers. Product owners should lead the product team: crafting a product vision and strategy, prioritizing work, evangelizing to stakeholders and users, working with developers and designers, and measuring results.</li>
+  <li><strong>Subject matter expertise:</strong> Public service work is detail-oriented. It’s often focused in the niche areas of expertise our team doesn’t have. While we bring technical expertise, your product owners provide guidance and expertise about your program and users.</li>
+  <li><strong>Advocacy inside your agency:</strong> The product owner can identify stakeholders inside your agency and gain their support. Whether we have research results to present, a major milestone to celebrate, or questions for another office in your agency, the product owner is our connection to the relevant people.</li>
+</ul>
+
+<h3 id="what-does-this-mean-for-you-4">What does this mean for you?</h3>
+
+<p>The product owner will lead the product team. While they may not already know best practices in product management, or agile or lean methodologies at the outset, our team will coach them to learn the necessary skills. We’ve found that an empowered product owner dramatically shortens the time to delivery, reduces overall risk, and creates solutions that align with the agency mission while serving user needs.</p>
+
+<h1 id="questions">Questions</h1>
+
+<p>If you already have a primary contact at 18F, they can answer any questions you may have about these principles. If you don’t yet have a primary contact, please reach out to our Agency Partnerships team at <a href="mailto:inquiries18f@gsa.gov">inquiries18f@gsa.gov</a>. We’ll be more than happy to discuss possibilities and concerns.</p>
+
+    </section>
+    
+  </div>
+</section>
+
+
+  <section class="usa-section bg-primary-dark">
+  <div class="grid-container">
+      <div class="usa-graphic-list__row grid-row grid-gap">
+          <div class="usa-media-block tablet:grid-col">
+            <img class="usa-media-block__img"  src="/site/assets/img/talk-bubble.svg" alt="Alt text">
+            <div class="usa-media-block__body">
+              <p>Work with us to plan successful projects, choose better vendors, build custom software, or learn how to work in new ways.</p>
+              <a class="usa-button usa-button--secondary" href="/site/contact/">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      </main>
+    
+
+    
+
+    <footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lightest">
+    <div class="grid-container">
+      <div class="grid-row grid-gap padding-y-4">
+        <div class="tablet:grid-col-3">
+          <h4>Work with us</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/about/">About 18F</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/what-we-deliver">Case studies</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/how-we-work/">How we work</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/partnership-principles/">Partnership principles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Resources</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/blog/">Blog</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/guides/">Guides</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://methods.18f.gov/">18F Methods</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Policies</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/linking-policy/">Linking policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/open-source-policy/">Open source policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/vulnerability-disclosure-policy/">Vulnerability disclosure</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/code-of-conduct/">Code of conduct</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Contact us</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/contact/">Get in touch</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/about/#for-press">Press</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://github.com/18F/18f.gsa.gov/issues/new">Report a bug</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/join/">Join 18F</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__contact-links mobile-lg:grid-col-12">
+          <div class="usa-footer grid-row grid-gap-1">
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/18F">
+                <span>Twitter</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--github" href="https://github.com/18F">
+                <span>Github</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--linkedin" href="https://www.linkedin.com/company/gsa18f/">
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="Agency identifier"
+  >
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__logos">
+        <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+          <img
+            class="usa-identifier__logo-img"
+            src="/site/assets/img/logos/gsa-logo-w100.png"
+            alt="GSA logo"
+            role="img"
+          />
+        </a>
+      </div>
+      <div class="usa-identifier__identity text-base-lightest" aria-label="Agency description">
+        <p class="usa-identifier__identity-domain">18f.gsa.gov</p>
+        <p class="usa-identifier__identity-disclaimer text-base-lightest">An official website of the
+          <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">
+            GSA’s Technology Transformation Services
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <nav
+    class="usa-identifier__section usa-identifier__section--required-links"
+    aria-label="Important links"
+  >
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about"
+            title="About GSA"
+          >
+            About GSA
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/accessibility-aids"
+            title="Accessibility support"
+          >
+            Accessibility support
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+            title="FOIA requests"
+          >
+            FOIA requests
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about-us/organization/office-of-civil-rights/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+            title="No FEAR Act data"
+          >
+            No FEAR Act data
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsaig.gov/"
+            title="Office of the Inspector General"
+          >
+            Office of the Inspector General
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/reports/budget-performance"
+            title="Performance reports"
+          >
+             Performance reports
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/website-policies#privacy"
+            title="Privacy Policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description text-base-lightest">Looking for U.S. government information and services?</div>
+      <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+    </div>
+  </section>
+</div>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/site/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+      var usasearch_config = { siteHandle:"18F-site" };
+
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "//search.usa.gov/javascripts/remote.loader.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+
+//]]>
+</script>
+
+
+
+
+
+
+  </body>
+</html>

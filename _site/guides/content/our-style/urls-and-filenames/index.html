@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    
+
+<!-- site.url: http://0.0.0.0:4000 -->
+<!-- site.baseurl: /site -->
+<!-- siteurl: http://0.0.0.0:4000 -->
+
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="vmVo2wbQpKGMHVpllQP7bQ0w5gICWD356VH9DNbv5f4" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Creator -->
+<meta name="twitter:creator" content="@18F">
+<!-- Title -->
+
+  <title>18F: Digital service delivery | URLs and filenames</title>
+  <meta property="og:title" content="18F: Digital service delivery | URLs and filenames" />
+  <meta name="twitter:title" content="18F: Digital service delivery | URLs and filenames">
+
+
+<!-- Twitter Site -->
+<meta name="twitter:site" content="@18F" />
+
+<!-- Description -->
+
+  <meta name="description" content="&lt;h2 id=&quot;creating-urls&quot;&gt;Creating URLs&lt;/h2&gt;
+">
+  <meta property="og:description" content="&lt;h2 id=&quot;creating-urls&quot;&gt;Creating URLs&lt;/h2&gt;
+" />
+  <meta property="twitter:description" content="&lt;h2 id=&quot;creating-urls&quot;&gt;Creating URLs&lt;/h2&gt;
+" />
+
+
+<!-- Image -->
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+  <meta property="og:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+
+
+<!-- Author -->
+
+
+<!-- Date -->
+
+  <meta name="date" content="2022-10-12 23:28:02 -0400"" scheme="YYYY-MM-DD">
+
+
+<!-- Tags -->
+
+  <meta name="keywords" content="">
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/site/guides/content/our-style/urls-and-filenames/" />
+
+<!--[if lt IE 9]>
+<script src="/site/assets/js/vendor/html5shiv.js"></script>
+<script src="/site/assets/js/vendor/respond.js"></script>
+<script src="/site/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+
+<!--  Touch icon for iOS 2.0+ and Android 2.1+ -->
+<link rel="apple-touch-icon-precomposed" href="/site/assets/img/favicons/18F-Logo-152.png">
+
+<!--  Desktop icon -->
+<link rel="icon" href="/site/assets/img/favicons/18F-Logo-152.png" type="image/png">
+
+  <!--  More info: https://github.com/audreyr/favicon-cheat-sheet -->
+
+<!-- CSS
+=================================================== -->
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/site/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+      
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48605964-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // `forceSSL` was used for analytics.js (the older Google Analytics script). It isn't documented for gtag.js, but the term occurs in the gtag.js code; figure it doesn't hurt to leave it in. -@afeld, 5/29/19
+  gtag('config', 'UA-48605964-1', { 'anonymize_ip': true, 'forceSSL': true });
+</script>
+
+
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA&subagency=TTS,18F"></script>
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+  <section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/site/assets/uswds/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br/>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-https.svg" role="img" alt="Https">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br/>
+              A <strong>lock</strong> (
+<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>
+) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic usa-header--basic-megamenu" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/site/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://18f.gsa.gov/assets/img/logos/18f-logo.svg"
+              alt="18F">
+          
+          <!-- em for logo-text from uswds-jekyll template removed -->
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <!-- usa-nav__inner div removed to fit navigation -->
+    <nav role="navigation" class="usa-nav">
+        <button class="usa-nav__close">
+          <img src="/site/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/what-we-deliver/">
+                <span>What we deliver</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/how-we-work/">
+                <span>How we work</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/guides/">
+                <span>Guides</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   usa-current" href="/site/blog/">
+                <span>Blog</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/contact/">
+                <span>Contact</span>
+              </a>
+            
+          </li>
+          
+
+        </ul>
+        
+
+        
+          
+          
+            <form
+  accept-charset="UTF-8"
+  action="https://search.usa.gov/search"
+  id="search_form"
+  method="get"
+  class="usa-search usa-search--small js-search-form">
+  <input
+    name="utf8"
+    type="hidden"
+    value="&#x2713;" />
+  <input
+    id="affiliate"
+    name="affiliate"
+    type="hidden"
+    value="18F-site" />
+  <div role="search">
+    <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
+    <input
+      autocomplete="off"
+      class="usa-input usagov-search-autocomplete"
+      id="query"
+      name="query"
+      type="search" />
+    <button
+      class="usa-button"
+      type="submit"
+      name="commit">
+      <span class="usa-sr-only">Search</span>
+    </button>
+  </div>
+</form>
+
+          
+        
+
+        
+
+
+        </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" ="">
+        
+
+
+
+
+
+
+
+
+<div class="grid-container">
+  <nav class="usa-breadcrumb" aria-label="Breadcrumbs">
+    <ol class="usa-breadcrumb__list">
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/" class="usa-breadcrumb__link">
+          <span>Home</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/guides/" class="usa-breadcrumb__link">
+          <span>Guides</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/guides/content/" class="usa-breadcrumb__link">
+          <span>Content Guide</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <span></span>
+      </li>
+    </ol>
+  </nav>
+</div>
+
+
+
+<div class="grid-container usa-section">
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-2"><ul>
+        
+        <li>
+          <a href="/site/guides/content/">About this guide</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/address-the-user/">Address the user</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/avoid-duplication/">Avoid duplication</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/be-concise/">Be concise</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/gather-feedback/">Gather feedback</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/">Our approach</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/keep-refining/">Keep refining</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/make-content-web-friendly/">Make content web-friendly</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/plain-language/">Use plain language</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/structure-the-content/">Structure the content</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/abbreviations-and-acronyms/">Abbreviations and acronyms</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/active-voice/">Active voice</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/capitalization/">Capitalization</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/inclusive-language/">Inclusive language</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/">Our style</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/names/">Names</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/numbers-and-percentages/">Numbers and percentages</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/punctuation/">Punctuation</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/specific-words-and-phrases/">Specific words and phrases</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/style-guides/">Style guides</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/technical-and-interface-writing/">Technical and interface writing</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/trademarks-and-brands/">Trademarks and brands</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/urls-and-filenames/">URLs and filenames</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/voice-and-tone/">Voice and tone</a>
+        </li>
+        
+        <li>
+          <a href="/site/resources/">Resources</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="tablet:grid-col-8">
+      <article id="main-content" "class=" post-article" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+          <h1 itemprop="name headline">URLs and filenames</h1>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          
+
+          <h2 id="creating-urls">Creating URLs</h2>
+
+<p>URLs should be short, memorable, easy to type, and well-structured.
+Your control over your URL may be limited, but you should do what you can
+with the pieces you can control.</p>
+
+<p>In the vast majority of cases, everything a user can reach on your site
+should have a distinct URL that a user can bookmark and use later to
+reach that same location.</p>
+
+<p>When creating URLs, use dashes to separate words, omit articles
+(a/an/the), use the stems of verbs (<code class="language-plaintext highlighter-rouge">/make-thing/</code> rather than
+<code class="language-plaintext highlighter-rouge">/making-thing/</code>), and avoid extraneous terms.</p>
+
+<h3 id="domains">Domains</h3>
+
+<p>Domains should reflect the user’s needs and not those of the
+organization. If your department is several layers deep in terms of
+bureaucratic structure, it’s unlikely that this is important to users,
+and there is likely minimal cost associated with using a more shallow
+domain.</p>
+
+<p>It’s not necessary to have <code class="language-plaintext highlighter-rouge">www.</code> at the start of a domain. This is a
+holdover from the early internet. Any domain that has a <code class="language-plaintext highlighter-rouge">www</code> level
+should also work if that level is omitted.</p>
+
+<p>Domains should not be more than three levels deep in most cases:
+<code class="language-plaintext highlighter-rouge">18f.gsa.gov</code> is fine, but <code class="language-plaintext highlighter-rouge">content-guide.guides.18f.gsa.gov</code> would not
+be. It’s rare that more than four levels is justifiable.</p>
+
+<p>At the same time, it’s not necessary to have a two-level domain for
+everything.</p>
+
+<p>Domain names should be short, using abbreviations unless those are
+likely to be meaningless to users.</p>
+
+<p>If a domain level has more than one word, you should strongly consider
+separating the words with dashes to make sure users read them the way
+you intend. If 18F had a project called EARS that for some reason needed
+a two-level domain, that domain should be <code class="language-plaintext highlighter-rouge">18f-ears.gov</code> and not
+<code class="language-plaintext highlighter-rouge">18fears.gov</code> (<code class="language-plaintext highlighter-rouge">ears.18f.gov</code> would probably be the ideal).</p>
+
+<p>Domains are case-insensitive. They should be written as lowercase.</p>
+
+<h3 id="paths">Paths</h3>
+
+<p>Again, the shorter the better, but long paths are more excusable than
+long domains.</p>
+
+<p>Paths are typically understood as hierarchies that become increasingly
+specific: <code class="language-plaintext highlighter-rouge">/our-style/urls-and-filenames/</code> reflects that
+urls-and-filenames is part of our-style. If this were a much larger
+guide, it’s possible that it could be divided further, for example
+<code class="language-plaintext highlighter-rouge">/our-style/urls-and-filenames/creating-urls/</code>.</p>
+
+<p>Each level of a path should make it possible to find the content beneath
+it:</p>
+
+<ul>
+  <li>The content at the root level should reflect that <code class="language-plaintext highlighter-rouge">/our-style/</code>
+is present.</li>
+  <li><code class="language-plaintext highlighter-rouge">/our-style/</code> should make it easy to find <code class="language-plaintext highlighter-rouge">urls-and-filenames/</code>.</li>
+</ul>
+
+<p>Conversely, the user should be able to remove a level from the path and
+end up at the parent of the original content.</p>
+
+<p>Paths should be designed to be sensible for the user, not to reflect
+internal technical or bureaucratic structure. For example, filename
+extensions like <code class="language-plaintext highlighter-rouge">.php</code> should be avoided as they reflect the internal
+technology used on the server (and will not reflect even that if the
+site later changes to a different technology).</p>
+
+<p>When separating words in a path, use hyphens. Hyphens are commonly
+understood by search engines to indicate word breaks (whereas other
+separators, like underscores, are not).</p>
+
+<p>Paths are case-sensitive. They should be lowercase, regardless of what
+they contain, as uppercase letters make them more difficult to type (and
+to remember).</p>
+
+<h3 id="examples">Examples</h3>
+
+<h4 id="domain-names">Domain names</h4>
+
+<ul>
+  <li><strong>Starting point</strong>:
+<code class="language-plaintext highlighter-rouge">www.longnamecreationservice.departmentoflongnames.bureauofnames.gov</code>.</li>
+  <li>
+    <p><strong>Slight improvement</strong>:
+<code class="language-plaintext highlighter-rouge">longnamecreationservice.departmentoflongnames.bureauofnames.gov</code>.</p>
+
+    <p><strong>Rationale</strong>: <code class="language-plaintext highlighter-rouge">www</code> is unnecessary and omitting it makes the URL easier to type.</p>
+  </li>
+  <li>
+    <p><strong>Very slight improvement</strong>:
+<code class="language-plaintext highlighter-rouge">long-name-creation-service.departmentoflongnames.bureauofnames.gov</code>.</p>
+
+    <p><strong>Rationale</strong>: Hyphens make the URL easier to read. The same would
+be true for the other levels of the domain, but we’re assuming you
+don’t have control over those in these examples.</p>
+  </li>
+  <li>
+    <p><strong>Improvement</strong>: <code class="language-plaintext highlighter-rouge">long-name-creation-service.bureauofnames.gov</code>.</p>
+
+    <p><strong>Rationale</strong>: The user doesn’t need the URL to reflect that the
+service belongs to the Department of Long Names.</p>
+  </li>
+  <li>
+    <p><strong>Better</strong>: <code class="language-plaintext highlighter-rouge">lncs.bureauofnames.gov</code>.</p>
+
+    <p><strong>Rationale</strong>: This is shorter and easier to type. However, it
+relies on users thinking of the service by that abbreviation.</p>
+  </li>
+  <li>
+    <p><strong>Better</strong>: <code class="language-plaintext highlighter-rouge">make-long-names.bureauofnames.gov</code>.</p>
+
+    <p><strong>Rationale</strong>: If the users aren’t familiar with that abbreviation,
+a shorter description of what the service does is better to have as
+the lowest level of the domain.</p>
+  </li>
+</ul>
+
+<h4 id="paths-1">Paths</h4>
+
+<ul>
+  <li><strong>Starting point</strong>:
+<code class="language-plaintext highlighter-rouge">/services/default/php/forms/departmentoflongnames/longnamecreationservice/index.php?action=create</code>.</li>
+  <li>
+    <p><strong>Slight improvement</strong>:
+<code class="language-plaintext highlighter-rouge">/services/default/php/forms/departmentoflongnames/longnamecreationservice/index.php</code>.</p>
+
+    <p><strong>Rationale</strong>: Assuming that creation is the most likely action
+users will want to take, make it the default and strip the
+requirement for the query string.</p>
+  </li>
+  <li>
+    <p><strong>Slight improvement</strong>:
+<code class="language-plaintext highlighter-rouge">/services/default/php/forms/departmentoflongnames/longnamecreationservice/</code>.</p>
+
+    <p><strong>Rationale</strong>: The default page should be delivered automatically,
+making the inclusion of <code class="language-plaintext highlighter-rouge">index.php</code> unnecessary. Also, hide the
+technical details (<code class="language-plaintext highlighter-rouge">.php</code>).</p>
+  </li>
+  <li>
+    <p><strong>Improvement</strong>: <code class="language-plaintext highlighter-rouge">/departmentoflongnames/longnamecreationservice/</code>.</p>
+
+    <p><strong>Rationale</strong>: Users don’t need to know the technical setup of
+the site.</p>
+  </li>
+  <li>
+    <p><strong>Improvement</strong>:
+<code class="language-plaintext highlighter-rouge">/department-of-long-names/long-name-creation-service/</code>.</p>
+
+    <p><strong>Rationale</strong>: Words should be separated with hyphens.</p>
+  </li>
+  <li>
+    <p><strong>Better</strong>: <code class="language-plaintext highlighter-rouge">/department-of-long-names/lncs/</code>.</p>
+
+    <p><strong>Rationale</strong>: As above, if the users are familiar with the
+abbreviation, use it to make the path shorter.</p>
+  </li>
+  <li>
+    <p><strong>Better</strong>: <code class="language-plaintext highlighter-rouge">/department-of-long-names/make-long-names/</code>.</p>
+
+    <p><strong>Rationale</strong>: As above, if they aren’t familiar with the
+abbreviation, use a shorter description of what the server does.</p>
+  </li>
+</ul>
+
+<h4 id="both">Both</h4>
+
+<ul>
+  <li><strong>Starting point</strong>:
+<code class="language-plaintext highlighter-rouge">www.longnamecreationservice.departmentoflongnames.bureauofnames.gov/services/default/php/forms/departmentoflongnames/longnamecreationservice/index.php?action=create</code>.</li>
+  <li>
+    <p><strong>Improvement</strong>:
+<code class="language-plaintext highlighter-rouge">make-long-names.bureauofnames.gov/department-of-long-names/make-long-names/</code>.</p>
+
+    <p><strong>Rationale</strong>: This combines the suggestions from the previous
+two sections.</p>
+  </li>
+  <li>
+    <p><strong>Better</strong>: <code class="language-plaintext highlighter-rouge">make-long-names.bureauofnames.gov</code>.</p>
+
+    <p><strong>Rationale</strong>: This is reasonable if the Department of Long Names
+has only a couple of services that might be popular enough to
+warrant their own subdomains, particularly if they don’t necessarily
+fit cleanly into other content and stand alone.</p>
+  </li>
+  <li>
+    <p><strong>Better</strong>: <code class="language-plaintext highlighter-rouge">bureauofnames.gov/department-of-long-names/make-long-names/</code>.</p>
+
+    <p><strong>Rationale</strong>: This is reasonable if the Long Name Creation Service is
+one of many related services that the Department of Long Names provides.</p>
+  </li>
+</ul>
+
+<h2 id="maintaining-urls">Maintaining URLs</h2>
+
+<p>Users constantly bookmark and share web pages, making the maintenance of
+permanent and long-lasting URLs an important piece of content management.
+Broken links obscure the internet landscape.</p>
+
+<p>URLs should never stop working.</p>
+
+<p>This is not as technically challenging as it sounds. If the domain — the
+high-level domain, not subdomains — is lost, the URLs will be lost, but
+otherwise it’s entirely possible to keep them working. Planning for them
+to continue working is the first step in any process that involves new
+URLs.</p>
+
+<p>Whenever possible, maintain original URLs.
+In all other cases, set up a redirect for outdated URLs and links;
+this is almost always a painless task for web managers. There are a variety
+of ways to accomplish this, some of them requiring more
+technical work than others. It’s most difficult to accomplish when
+moving from URLs that include query parameters, as some early website
+systems did. Sensibly-constructed URLs are easier to migrate.</p>
+
+<p>Some examples:</p>
+
+<h3 id="changing-subdomains">Changing subdomains</h3>
+
+<p>If we changed our name from 18F to 19G, we would change our domain, so
+this page would be located at
+<code class="language-plaintext highlighter-rouge">https://pages.19g.gov/content-guide/urls-and-filenames/</code>. We would keep
+the <code class="language-plaintext highlighter-rouge">18f.gov</code> domain running, but all it would do would redirect
+everything to <code class="language-plaintext highlighter-rouge">19g.gov</code>. Users who entered the old URL would be
+redirected and might not even notice the URL change.</p>
+
+<p>If we decide to eliminate the pages subdomain and put this directly on
+<code class="language-plaintext highlighter-rouge">18f.gov</code>, we would do essentially the same thing, keeping this
+subdomain and adding a rule to redirect to the same path on <code class="language-plaintext highlighter-rouge">18f.gov</code>.</p>
+
+<h3 id="changing-paths">Changing paths</h3>
+
+<p>If we produce lots and lots of content in the future, it might become
+sensible to change our path to reflect this, and we might want to have a
+guides level, so that the new URL for this page would be:
+<code class="language-plaintext highlighter-rouge">https://pages.18f.gov/guides/content-guide/urls-and-filenames/</code>. In
+this case, we would add a rule that redirects everything starting with
+<code class="language-plaintext highlighter-rouge">/content-guide/</code> to <code class="language-plaintext highlighter-rouge">/guides/content-guide/</code>.</p>
+
+<p>This also means that URLs, and parts of URLs, should not be re-used.
+Once we use <code class="language-plaintext highlighter-rouge">/content-guide/</code> to refer to this guide, we can no longer
+decide in future to use <code class="language-plaintext highlighter-rouge">/content-guide/</code> as the location for something
+else, even if we later change the URL for this guide.</p>
+
+<h2 id="creating-filenames">Creating filenames</h2>
+
+<p>Use hyphens to separate words, just as with URLs.</p>
+
+<p>Lowercase is better, because it’s easier to type and to remember.</p>
+
+<p>Use the right extension — PDFs should have <code class="language-plaintext highlighter-rouge">.pdf</code> at the end, JPGs
+should have <code class="language-plaintext highlighter-rouge">.jpg</code> at the end, etc.</p>
+
+<p>Shorter is better, but the content should be descriptive to the user,
+and it’s better to have long descriptive filenames than short obscure
+ones. <code class="language-plaintext highlighter-rouge">summary-of-pay-gap-findings.pdf</code> is better than <code class="language-plaintext highlighter-rouge">paygap.pdf</code> or
+<code class="language-plaintext highlighter-rouge">smmrypgpfnds.pdf</code>.</p>
+
+<p>If the file content is based on a date or time, include that: the 1998
+report for an organization should have <code class="language-plaintext highlighter-rouge">1998</code> in the filename, a
+February issue of a magazine should have the year and the month, and a
+PDF of a daily newspaper should have year, month, and date. When
+including dates, use the <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> format, i.e. <code class="language-plaintext highlighter-rouge">2015-10-13</code>.</p>
+
+<p>Avoid the use of special characters beyond the hyphen and period, unless
+absolutely necessary. Do not include spaces (use hyphens in their
+place).</p>
+
+<h2 id="presenting-urls-and-filenames-in-text">Presenting URLs and filenames in text</h2>
+
+<p>Whether beginning with the protocol or not, always lowercase URLs in
+text. Paths are case-sensitive, however, so their casing must be
+preserved.</p>
+
+<p>In interactive contexts, particularly web pages, URLs (except when used
+as examples, as throughout this document) should always be active links.
+When they’re active links, do not include the protocol in the link text.</p>
+
+<p>In non-interactive contexts, such as print, the protocol can be omitted,
+assuming <code class="language-plaintext highlighter-rouge">http://</code> and <code class="language-plaintext highlighter-rouge">https://</code> both work and bring the user to the
+same place.</p>
+
+<p>There are occasions where URLs should be delimited; use <code class="language-plaintext highlighter-rouge">&lt;</code> and <code class="language-plaintext highlighter-rouge">&gt;</code> for
+this. This is not normally necessary in interactive contexts where the
+link is clearly defined, but is most often relevant in email, where the
+writer may have to guess at what their email program will turn into a
+link. This is particularly true when URL contains spaces.</p>
+
+<p>Filenames are case-sensitive, and their case should be preserved when
+they are referred to in text; do not capitalize if beginning a sentence
+with a filename that begins with a lowercase letter. Filenames may need
+to be delimited in the same way as URLs.</p>
+
+<h3 id="examples-1">Examples</h3>
+
+<p>Capitalization on a web page:</p>
+
+<blockquote>
+  <p><a href="https://gsa.gov">gsa.gov</a> is the General Services Administration
+site.</p>
+</blockquote>
+
+<p>Capitalization in print:</p>
+
+<blockquote>
+  <p>gsa.gov is the General Services Administration site.</p>
+</blockquote>
+
+<p>Delimiting an awkward URL in email:</p>
+
+<blockquote>
+  <p>When you get the chance, could you redirect &lt;example.com/spaces in
+URLs are bad/&gt; to &lt;example.com/spaces-in-urls-are-bad/&gt;, as
+per our guidelines, and make the latter the definitive URL for the
+page?</p>
+</blockquote>
+
+<h3 id="url-structure">URL Structure</h3>
+
+<ol>
+  <li><strong>The protocol.</strong> For example <code class="language-plaintext highlighter-rouge">https://</code>, <code class="language-plaintext highlighter-rouge">http://</code>, or <code class="language-plaintext highlighter-rouge">ftp://</code>.
+The <code class="language-plaintext highlighter-rouge">://</code> is always present.</li>
+  <li><strong>The domain.</strong> For example <code class="language-plaintext highlighter-rouge">18f.gsa.gov</code>. This is “where on the
+internet” the URL is referring to. Also called:
+    <ul>
+      <li>site</li>
+      <li>domain name</li>
+      <li>server</li>
+    </ul>
+  </li>
+  <li><strong>Optional: the port.</strong> A number specifying how to access the
+content on this particular domain. Not normally used on
+production sites. Follows the domain, separated by a colon, for
+example <code class="language-plaintext highlighter-rouge">http://dev.example.com:8080</code>.</li>
+  <li><strong>The path:</strong> what resource on the domain the URL is referring to.
+If omitted, defaults to <code class="language-plaintext highlighter-rouge">/</code>, the “root level” of the domain. Always
+starts with a slash, and different levels of resources are separated
+by slashes. For example: <code class="language-plaintext highlighter-rouge">/content-guide/</code> is the path in
+<code class="language-plaintext highlighter-rouge">https://pages.18f.gov/content-guide/</code>.</li>
+  <li><strong>Optional: the query string.</strong> Normally contains parameters that
+have been submitted to the site, for example with searches.
+<code class="language-plaintext highlighter-rouge">?q=18f+content+guide</code> is the query string in
+<code class="language-plaintext highlighter-rouge">https://www.google.com/search?q=18f+content+guide</code>.</li>
+  <li><strong>Optional: the fragment.</strong> Normally this indicates a specific
+section of a page, but can also be used for other things by
+web applications. <code class="language-plaintext highlighter-rouge">#main</code> is the fragment in
+<code class="language-plaintext highlighter-rouge">https://pages.18f.gov/content-guide/specific-words-and-phrases/#main</code>.</li>
+</ol>
+
+<p>The protocol should almost always be <code class="language-plaintext highlighter-rouge">https://</code> unless you’re forced to
+use <code class="language-plaintext highlighter-rouge">http://</code>. Users entering <code class="language-plaintext highlighter-rouge">http://</code> as the protocol should be
+redirected to <code class="language-plaintext highlighter-rouge">https://</code>. If at all possible, your URL should not
+contain a port. Query strings should also be avoided. Fragments can be
+used as a helper for the user, but should not be necessary for the user
+to find the relevant content.</p>
+
+<h2 id="link-text">Link text</h2>
+
+<p>It’s important to remember that users of screen readers will often <a href="http://webaim.org/techniques/hypertext/#link_to_link">skip from one link to another</a>, skipping the text in between, as a way of skimming for the content they need.</p>
+
+<p>This ultimately means that link text should be understandable independent of the text surrounding it. Avoid ambiguous link text like <em>click here</em>, <em>here</em>, or <em>learn more</em> whenever possible.</p>
+
+<p>For example, instead of:</p>
+
+<blockquote>
+  <p><a href="https://github.com/18F/code-of-conduct">Click here</a> for more information about our Code of Conduct.</p>
+</blockquote>
+
+<p>Use:</p>
+
+<blockquote>
+  <p>For more information, see the <a href="https://github.com/18F/code-of-conduct">18F Code of Conduct</a>.</p>
+</blockquote>
+
+<p>This has an added benefit of improving search results for sighted users.</p>
+
+<h2 id="screen-reader-only-text">Screen reader-only text</h2>
+
+<p>In some situations, descriptive links may be overly verbose or redundant for
+sighted users. Here’s an example from the <a href="https://beta.fec.gov/registration-and-reporting/">betaFEC site</a>:</p>
+
+<p><a href="/site/images/betaFEC.png"><img src="/site/images/betaFEC.png" alt="Screenshot of Federal Election Commission website, with Candidates and committees highlighted under who can register and report, with a prominent button-style link at the bottom that says learn more" /></a></p>
+
+<p>Here the <em>Learn more</em> link is appropriate for sighted users, but it may be confusing to screen reader users. In such situations, it’s possible to add <a href="http://webaim.org/techniques/css/invisiblecontent/">invisible text just for screen reader users</a>. For example, the U.S. Web Design Standards has a special CSS class called <code class="language-plaintext highlighter-rouge">usa-sr-only</code> for this purpose. Using this class, the aforementioned <em>Learn more</em> link might be written in HTML like so:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">”essentials-house-and-senate-candidates-and-committees/”</span><span class="nt">&gt;</span>
+  Learn more
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">”usa-sr-only”</span><span class="nt">&gt;</span>
+    about candidate and candidate committees
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>This would keep the link concise for sighted users, while also providing
+important context for screen reader users.</p>
+
+<p>If you want to use text intended only for screen readers on your project but
+are unfamiliar with CSS, ask your project’s front end developer for help. They
+can create a CSS class for you if one doesn’t already exist. Alternatively,
+reach out to <a href="https://18f.slack.com/archives/g-accessibility">#g-accessibility</a> or <a href="https://18f.slack.com/archives/g-frontend">#g-frontend</a> in Slack!</p>
+
+<h2 id="additional-resources">Additional resources</h2>
+
+<ul>
+  <li><a href="http://webaim.org/techniques/hypertext/">WebAIM: Links and Hypertext</a></li>
+  <li><a href="https://www.w3.org/QA/Tips/noClickHere">W3C: Don’t Use “Click Here” as Link Text</a></li>
+  <li><a href="https://moz.com/blog/click-here-seo">Stop Clicking Here! 7 Superior SEO Alternatives to Generic Links</a></li>
+  <li><a href="https://pages.18f.gov/accessibility/links/">18F Accessibility Guide</a></li>
+  <li><a href="https://www.gsa.gov/website-information/website-policies#linking">GSA Linking Policy</a></li>
+</ul>
+
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+
+<section class="post-pagination grid-container">
+  <div class="grid-row grid-gap">
+    <div class="grid-col-6">
+      
+      <a href="/site/guides/content/our-style/trademarks-and-brands/">
+        <span class="link-arrow-left">
+          <svg class="icon caret" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 444.531 444.531" style="enable-background:new 0 0 444.531 444.531;" xml:space="preserve" role="img" aria-hidden="true">
+  <title>Arrow left</title>
+  <desc>Arrow pointing to the left</desc>
+  <g>
+    <path d="M213.13,222.409L351.88,83.653c7.05-7.043,10.567-15.657,10.567-25.841c0-10.183-3.518-18.793-10.567-25.835   l-21.409-21.416C323.432,3.521,314.817,0,304.637,0s-18.791,3.521-25.841,10.561L92.649,196.425   c-7.044,7.043-10.566,15.656-10.566,25.841s3.521,18.791,10.566,25.837l186.146,185.864c7.05,7.043,15.66,10.564,25.841,10.564   s18.795-3.521,25.834-10.564l21.409-21.412c7.05-7.039,10.567-15.604,10.567-25.697c0-10.085-3.518-18.746-10.567-25.978   L213.13,222.409z" fill="#046b99"/>
+  </g>
+</svg>
+
+          Previous guide page
+        </span>
+        <h5>&ldquo;Trademarks and brands&rdquo;</h5>
+      </a>
+      
+    </div>
+    <div class="grid-col-6">
+      
+      <a href="/site/guides/content/our-style/voice-and-tone/">
+        <span class="link-arrow-right">
+          Next guide page
+          <svg class="icon caret" xmlns="http://www.w3.org/2000/svg" width="444.819" height="444.819" viewBox="0 0 444.819 444.819" role="img" aria-hidden="true">
+  <title>Arrow right</title>
+  <desc>Arrow pointing to the right</desc>
+  <path fill="#046b99" d="M352.025 196.712L165.885 10.848C159.028 3.615 150.468 0 140.185 0s-18.84 3.62-25.696 10.848l-21.7 21.416c-7.045 7.043-10.567 15.604-10.567 25.692 0 9.897 3.52 18.56 10.566 25.98L231.544 222.41 92.785 361.168c-7.04 7.043-10.563 15.604-10.563 25.693 0 9.9 3.52 18.566 10.564 25.98l21.7 21.417c7.043 7.043 15.612 10.564 25.697 10.564 10.09 0 18.656-3.52 25.697-10.564L352.025 248.39c7.046-7.423 10.57-16.084 10.57-25.98.002-10.09-3.524-18.655-10.57-25.698z"/>
+</svg>
+
+        </span>
+        <h5>&ldquo;Voice and tone&rdquo;</h5>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="usa-section featured-posts ">
+  <div class="grid-container">
+  
+  <ul class="grid-row grid-gap">
+  
+  </ul>
+  </div>
+</section>
+
+<section class="usa-section bg-primary-dark">
+  <div class="grid-container">
+      <div class="usa-graphic-list__row grid-row grid-gap">
+          <div class="usa-media-block tablet:grid-col">
+            <img class="usa-media-block__img"  src="/site/assets/img/talk-bubble.svg" alt="Alt text">
+            <div class="usa-media-block__body">
+              <p>Work with us to plan successful projects, choose better vendors, build custom software, or learn how to work in new ways.</p>
+              <a class="usa-button usa-button--secondary" href="/site/contact/">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+    
+
+    
+
+    <footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lightest">
+    <div class="grid-container">
+      <div class="grid-row grid-gap padding-y-4">
+        <div class="tablet:grid-col-3">
+          <h4>Work with us</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/about/">About 18F</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/what-we-deliver">Case studies</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/how-we-work/">How we work</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/partnership-principles/">Partnership principles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Resources</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/blog/">Blog</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/guides/">Guides</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://methods.18f.gov/">18F Methods</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Policies</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/linking-policy/">Linking policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/open-source-policy/">Open source policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/vulnerability-disclosure-policy/">Vulnerability disclosure</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/code-of-conduct/">Code of conduct</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Contact us</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/contact/">Get in touch</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/about/#for-press">Press</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://github.com/18F/18f.gsa.gov/issues/new">Report a bug</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/join/">Join 18F</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__contact-links mobile-lg:grid-col-12">
+          <div class="usa-footer grid-row grid-gap-1">
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/18F">
+                <span>Twitter</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--github" href="https://github.com/18F">
+                <span>Github</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--linkedin" href="https://www.linkedin.com/company/gsa18f/">
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="Agency identifier"
+  >
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__logos">
+        <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+          <img
+            class="usa-identifier__logo-img"
+            src="/site/assets/img/logos/gsa-logo-w100.png"
+            alt="GSA logo"
+            role="img"
+          />
+        </a>
+      </div>
+      <div class="usa-identifier__identity text-base-lightest" aria-label="Agency description">
+        <p class="usa-identifier__identity-domain">18f.gsa.gov</p>
+        <p class="usa-identifier__identity-disclaimer text-base-lightest">An official website of the
+          <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">
+            GSA’s Technology Transformation Services
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <nav
+    class="usa-identifier__section usa-identifier__section--required-links"
+    aria-label="Important links"
+  >
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about"
+            title="About GSA"
+          >
+            About GSA
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/accessibility-aids"
+            title="Accessibility support"
+          >
+            Accessibility support
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+            title="FOIA requests"
+          >
+            FOIA requests
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about-us/organization/office-of-civil-rights/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+            title="No FEAR Act data"
+          >
+            No FEAR Act data
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsaig.gov/"
+            title="Office of the Inspector General"
+          >
+            Office of the Inspector General
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/reports/budget-performance"
+            title="Performance reports"
+          >
+             Performance reports
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/website-policies#privacy"
+            title="Privacy Policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description text-base-lightest">Looking for U.S. government information and services?</div>
+      <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+    </div>
+  </section>
+</div>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/site/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+      var usasearch_config = { siteHandle:"18F-site" };
+
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "//search.usa.gov/javascripts/remote.loader.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+
+//]]>
+</script>
+
+
+
+
+
+
+  </body>
+</html>

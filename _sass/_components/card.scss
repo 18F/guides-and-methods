@@ -1,0 +1,26 @@
+.usa-card {
+
+  a {
+    text-decoration: none;
+  }
+
+  .usa-card__img {
+    height: 200px;
+  }
+
+  h6 {
+    font-weight: bold;
+    color: color('base-dark');
+    margin-bottom: units('05');
+  }
+
+  h3 {
+    color: color('primary-dark');
+  }
+
+  .usa-card__footer {
+    font-weight: bold;
+    font-size: $theme-type-scale-lg;
+    }
+
+}

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    
+
+<!-- site.url: http://0.0.0.0:4000 -->
+<!-- site.baseurl: /site -->
+<!-- siteurl: http://0.0.0.0:4000 -->
+
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="vmVo2wbQpKGMHVpllQP7bQ0w5gICWD356VH9DNbv5f4" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Creator -->
+<meta name="twitter:creator" content="@18F">
+<!-- Title -->
+
+  <title>18F: Digital service delivery | Voice and tone</title>
+  <meta property="og:title" content="18F: Digital service delivery | Voice and tone" />
+  <meta name="twitter:title" content="18F: Digital service delivery | Voice and tone">
+
+
+<!-- Twitter Site -->
+<meta name="twitter:site" content="@18F" />
+
+<!-- Description -->
+
+  <meta name="description" content="&lt;p&gt;If you’re like many folks, you might not be sure of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. Not to fret! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing.&lt;/p&gt;
+">
+  <meta property="og:description" content="&lt;p&gt;If you’re like many folks, you might not be sure of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. Not to fret! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing.&lt;/p&gt;
+" />
+  <meta property="twitter:description" content="&lt;p&gt;If you’re like many folks, you might not be sure of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. Not to fret! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing.&lt;/p&gt;
+" />
+
+
+<!-- Image -->
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+  <meta property="og:image" content="http://0.0.0.0:4000/site/assets/img/logos/18F-Logo-M.png">
+
+
+<!-- Author -->
+
+
+<!-- Date -->
+
+  <meta name="date" content="2022-10-12 23:28:02 -0400"" scheme="YYYY-MM-DD">
+
+
+<!-- Tags -->
+
+  <meta name="keywords" content="">
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/site/guides/content/our-style/voice-and-tone/" />
+
+<!--[if lt IE 9]>
+<script src="/site/assets/js/vendor/html5shiv.js"></script>
+<script src="/site/assets/js/vendor/respond.js"></script>
+<script src="/site/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+
+<!--  Touch icon for iOS 2.0+ and Android 2.1+ -->
+<link rel="apple-touch-icon-precomposed" href="/site/assets/img/favicons/18F-Logo-152.png">
+
+<!--  Desktop icon -->
+<link rel="icon" href="/site/assets/img/favicons/18F-Logo-152.png" type="image/png">
+
+  <!--  More info: https://github.com/audreyr/favicon-cheat-sheet -->
+
+<!-- CSS
+=================================================== -->
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/site/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+      
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48605964-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // `forceSSL` was used for analytics.js (the older Google Analytics script). It isn't documented for gtag.js, but the term occurs in the gtag.js code; figure it doesn't hurt to leave it in. -@afeld, 5/29/19
+  gtag('config', 'UA-48605964-1', { 'anonymize_ip': true, 'forceSSL': true });
+</script>
+
+
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA&subagency=TTS,18F"></script>
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+  <section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/site/assets/uswds/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br/>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/site/assets/uswds/img/icon-https.svg" role="img" alt="Https">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br/>
+              A <strong>lock</strong> (
+<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>
+) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic usa-header--basic-megamenu" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/site/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://18f.gsa.gov/assets/img/logos/18f-logo.svg"
+              alt="18F">
+          
+          <!-- em for logo-text from uswds-jekyll template removed -->
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <!-- usa-nav__inner div removed to fit navigation -->
+    <nav role="navigation" class="usa-nav">
+        <button class="usa-nav__close">
+          <img src="/site/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/what-we-deliver/">
+                <span>What we deliver</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/how-we-work/">
+                <span>How we work</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/guides/">
+                <span>Guides</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   usa-current" href="/site/blog/">
+                <span>Blog</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   " href="/site/contact/">
+                <span>Contact</span>
+              </a>
+            
+          </li>
+          
+
+        </ul>
+        
+
+        
+          
+          
+            <form
+  accept-charset="UTF-8"
+  action="https://search.usa.gov/search"
+  id="search_form"
+  method="get"
+  class="usa-search usa-search--small js-search-form">
+  <input
+    name="utf8"
+    type="hidden"
+    value="&#x2713;" />
+  <input
+    id="affiliate"
+    name="affiliate"
+    type="hidden"
+    value="18F-site" />
+  <div role="search">
+    <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
+    <input
+      autocomplete="off"
+      class="usa-input usagov-search-autocomplete"
+      id="query"
+      name="query"
+      type="search" />
+    <button
+      class="usa-button"
+      type="submit"
+      name="commit">
+      <span class="usa-sr-only">Search</span>
+    </button>
+  </div>
+</form>
+
+          
+        
+
+        
+
+
+        </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" ="">
+        
+
+
+
+
+
+
+
+
+<div class="grid-container">
+  <nav class="usa-breadcrumb" aria-label="Breadcrumbs">
+    <ol class="usa-breadcrumb__list">
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/" class="usa-breadcrumb__link">
+          <span>Home</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/guides/" class="usa-breadcrumb__link">
+          <span>Guides</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site/guides/content/" class="usa-breadcrumb__link">
+          <span>Content Guide</span>
+        </a>
+      </li>
+      
+      <li class="usa-breadcrumb__list-item">
+        <span></span>
+      </li>
+    </ol>
+  </nav>
+</div>
+
+
+
+<div class="grid-container usa-section">
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-2"><ul>
+        
+        <li>
+          <a href="/site/guides/content/">About this guide</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/address-the-user/">Address the user</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/avoid-duplication/">Avoid duplication</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/be-concise/">Be concise</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/gather-feedback/">Gather feedback</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/">Our approach</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/keep-refining/">Keep refining</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/make-content-web-friendly/">Make content web-friendly</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/plain-language/">Use plain language</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-approach/structure-the-content/">Structure the content</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/abbreviations-and-acronyms/">Abbreviations and acronyms</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/active-voice/">Active voice</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/capitalization/">Capitalization</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/inclusive-language/">Inclusive language</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/">Our style</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/names/">Names</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/numbers-and-percentages/">Numbers and percentages</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/punctuation/">Punctuation</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/specific-words-and-phrases/">Specific words and phrases</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/style-guides/">Style guides</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/technical-and-interface-writing/">Technical and interface writing</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/trademarks-and-brands/">Trademarks and brands</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/urls-and-filenames/">URLs and filenames</a>
+        </li>
+        
+        <li>
+          <a href="/site/guides/content/our-style/voice-and-tone/">Voice and tone</a>
+        </li>
+        
+        <li>
+          <a href="/site/resources/">Resources</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="tablet:grid-col-8">
+      <article id="main-content" "class=" post-article" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+          <h1 itemprop="name headline">Voice and tone</h1>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          
+
+          <p>If you’re like many folks, you might not be sure of the difference between voice and tone. Maybe you’ve never deliberately crafted a voice and don’t know where to start. Not to fret! In this section, we’ll discuss the differences between voice and tone, how we describe our organizational voice, how to establish your own voice, and how to choose a tone that’s appropriate for whatever you’re writing.</p>
+
+<h2 id="the-difference-between-voice-and-tone">The difference between voice and tone</h2>
+
+<p>It’s a common question and one that young writers find themselves asking often: What’s the difference between voice and tone?</p>
+
+<p>Our <strong>voice</strong> is our unique personality. It can be helpful to think of voice as analogous to a person’s voice. Just as you can identify your best friend in a crowd as soon as you hear her distinctive laugh, you can use an author’s or organization’s voice to identify a piece of writing even if you haven’t seen the byline. A well-crafted voice communicates personality and values — it’s a distilled representation of an author or organization.</p>
+
+<p><strong>Tone</strong> is more like attitude — the emotional context of a piece. It can be helpful to think of authorial tone as analogous to a person’s tone of voice. Just as a person would use a somber, sympathetic tone of voice to console a friend about the loss of a pet, an author writing a story about a natural disaster would most likely use a somber, serious tone. Conversely, an author writing a blog post about the launch of a new product might use an enthusiastic, upbeat tone.</p>
+
+<h2 id="our-voice">Our voice</h2>
+
+<p>At 18F, we like to communicate in a friendly, straightforward way. We consider our voice to be:</p>
+
+<ul>
+  <li>Authoritative</li>
+  <li>Conversational</li>
+  <li>Friendly</li>
+  <li>Instructive</li>
+  <li>Welcoming to all audiences</li>
+</ul>
+
+<p>We believe that government communication can — and should — be fun and easy to read, and our voice represents this.</p>
+
+<p>Here are a few sentences, taken from this guide, that exemplify our voice:</p>
+
+<blockquote>
+  <p>We created this guide for reference on an as-needed basis. It’s here when you’re wondering whether to capitalize the word <em>federal</em>, for instance, or when you’re wondering how to create a friendly, informational tone.</p>
+</blockquote>
+
+<h3 id="use-contractions">Use contractions</h3>
+
+<p>In all of the communication we produce, we want to create a strong connection with our users. We want to get them the information they need in a straightforward way and show that we know what’s important to them. As a government organization, we need to sound somewhat official; we also recognize that official doesn’t need to translate to stuffy, archaic, or aloof.</p>
+
+<p>For this reason, we use contractions in the writing we create for our site. We also encourage clients to consider using contractions, too, though we recognize this may not be the right choice for all contexts.</p>
+
+<p>The government is run by people for the benefit of people, and we never want users to forget that 18F is a group of enthusiastic, dedicated, hardworking (and friendly) folks. This desire informs how we craft our voice.</p>
+
+<h2 id="establishing-your-own-voice">Establishing your own voice</h2>
+
+<p>Whether you realize it or not, you already have a unique voice; the tricky part can be classifying it and pinning it down.</p>
+
+<p>To describe your voice — which, in turn, will allow you to diagram it, create guidelines around it, and make it reproducible — you’ll need to do some investigation and self reflection. Ask yourself these questions:</p>
+
+<p><strong>What are my core values?</strong> Your voice is a reflection of your core values. Before you craft a voice, consider the values your organization represents and how you can translate these into stylistic patterns. If you’re part of a young organization that hasn’t yet codified its values, you might use this opportunity to start that conversation. Crafting a voice before you’ve determined your organization’s values can be dangerous — your voice might not reflect what you eventually decide on. Along the same lines, if your organization is undergoing a large-scale values overhaul, you’ll want to make sure your organizational voice reflects your new values.</p>
+
+<p><strong>Who is my audience?</strong> In writing, as elsewhere, your audience is paramount — without them, you’d have no reason to write. Put yourself in their situation and think about the stylistic traits that might appeal to them. Remember, your voice doesn’t need to appeal to everyone (and, in fact, shouldn’t — cure-alls cure nothing, as the old saying goes).</p>
+
+<p>Use your answers to these questions to craft a description of your voice. Once you’ve come up with your description, look it over and identify any contradictions or holes (never a good thing). While voices should be nuanced, they should also be cohesive.</p>
+
+<h3 id="choosing-a-tone">Choosing a tone</h3>
+
+<p>As we mentioned earlier, your voice is a constant, but your tone is a variable. Consider the following: If you’re having an irredeemably terrible day, you might get peeved at a store associate who chirpily (and repeatedly) asks if they can help you with anything. While the associate maintained a helpful voice, they failed to shift from an energetic to a restrained tone based on your mood. As a result, their message (however valuable or well-intended) is lost on you.</p>
+
+<p>To avoid going the way of the associate, think about your users’ needs in different situations. Use these needs to determine your tone.</p>
+
+<p>Let’s consider three examples that target three different reader groups. Obituaries, technical blog posts, and marketing emails targeted at newly engaged couples have vastly different tones. Why? The three types of writing correspond to audiences in three highly different emotional states.</p>
+
+<table>
+    <tr>
+        <td><strong>Type of writing</strong></td>
+        <td><strong>Intended readership</strong></td>
+        <td><strong>Tone</strong></td>
+        <td><strong>Example</strong></td>
+    </tr>
+    <tr>
+        <td>Obituary of a prominent community member</td>
+        <td>People who knew (or knew of) the deceased</td>
+        <td>Respectful, reverent, somber</td>
+        <td>“Professor Pelham was respected by his colleagues and revered by students, many of whom would wake before dawn on registration day to ensure gaining entry to his classes. His wit, gentle humor, and compassion left their mark on everyone he talked to.”</td>
+    </tr>
+    <tr>
+        <td>Blog post announcing open source documentation guide</td>
+        <td>Developers and other readers with a strong tech background</td>
+        <td>Direct, impartial</td>
+        <td>“The <a href="https://18f.gsa.gov/2015/07/29/style-guide-for-open-source-documentation/">Open Source Style Guide</a> is a comprehensive handbook for writing clear, accessible, and user-friendly documentation so that your open source code repositories are accessible both internally and externally.</td>
+    </tr>
+    <tr>
+        <td>Marketing email from the boutique bridal department of a well-known clothing company </td>
+        <td>Newly engaged women (ages 28 through 33)</td>
+        <td>Enthusiastic, earnest, bubbly</td>
+        <td>“Say ‘I do!’ to 25% off. Now through July 3rd, take an additional 25% off all bridal wear and accessories. Celebrate your big day in style (and get a jumpstart on your honeymoon fund!).”</td>
+    </tr>
+</table>
+
+<p>If you’re having trouble finding an appropriate tone, try reframing the situation: How would you talk to a friend who’s in the same situation as your target user? Remembering that written communication is a conversation can help you settle on the best tone for your purpose.</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><strong><a href="http://voiceandtone.com/">MailChimp’s voice and tone guide</a></strong>: This beautifully designed tool allows you to select different content types and learn more about what the user might be feeling while reading them, along with examples of tones appropriate to those content types. Super simple to use, this is a great quick reference for creating diverse types of content.</li>
+  <li><strong><a href="http://thrivinglifenvc.org/feelings">The nonviolent communication (NVC) framework for feelings</a></strong>: Pinpointing the most appropriate tone for a piece of content starts with identifying what your readers might be feeling when they read that content. This list of feelings is broken into two categories — feelings you experience when your needs are being met and when they aren’t.</li>
+  <li><strong><a href="http://goinswriter.com/writing-voice/">Jeff Goins’s voice activities</a></strong>: Use author Jeff Goins’s ten-step exercise to pinpoint your authorial voice. The “steps” are actually discrete activities and can be undertaken in any order.</li>
+  <li>If you’re still a little confused about voice and tone, <strong><a href="http://www.wheaton.edu/Academics/Services/Writing-Center/Writing-Resources/Style-Diction-Tone-and-Voice">Wheaton College</a></strong> provides an excellent breakdown of those — and more — writing components.</li>
+  <li><strong><a href="http://www.fastcompany.com/3029356/work-smart/the-best-examples-questions-and-guides-to-find-your-social-media-marketing-voice">Fast Company</a></strong> has also weighed in on the voice and tone discussion.</li>
+</ul>
+
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+
+<section class="post-pagination grid-container">
+  <div class="grid-row grid-gap">
+    <div class="grid-col-6">
+      
+      <a href="/site/guides/content/our-style/urls-and-filenames/">
+        <span class="link-arrow-left">
+          <svg class="icon caret" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 444.531 444.531" style="enable-background:new 0 0 444.531 444.531;" xml:space="preserve" role="img" aria-hidden="true">
+  <title>Arrow left</title>
+  <desc>Arrow pointing to the left</desc>
+  <g>
+    <path d="M213.13,222.409L351.88,83.653c7.05-7.043,10.567-15.657,10.567-25.841c0-10.183-3.518-18.793-10.567-25.835   l-21.409-21.416C323.432,3.521,314.817,0,304.637,0s-18.791,3.521-25.841,10.561L92.649,196.425   c-7.044,7.043-10.566,15.656-10.566,25.841s3.521,18.791,10.566,25.837l186.146,185.864c7.05,7.043,15.66,10.564,25.841,10.564   s18.795-3.521,25.834-10.564l21.409-21.412c7.05-7.039,10.567-15.604,10.567-25.697c0-10.085-3.518-18.746-10.567-25.978   L213.13,222.409z" fill="#046b99"/>
+  </g>
+</svg>
+
+          Previous guide page
+        </span>
+        <h5>&ldquo;URLs and filenames&rdquo;</h5>
+      </a>
+      
+    </div>
+    <div class="grid-col-6">
+      
+      <a href="/site/resources/">
+        <span class="link-arrow-right">
+          Next guide page
+          <svg class="icon caret" xmlns="http://www.w3.org/2000/svg" width="444.819" height="444.819" viewBox="0 0 444.819 444.819" role="img" aria-hidden="true">
+  <title>Arrow right</title>
+  <desc>Arrow pointing to the right</desc>
+  <path fill="#046b99" d="M352.025 196.712L165.885 10.848C159.028 3.615 150.468 0 140.185 0s-18.84 3.62-25.696 10.848l-21.7 21.416c-7.045 7.043-10.567 15.604-10.567 25.692 0 9.897 3.52 18.56 10.566 25.98L231.544 222.41 92.785 361.168c-7.04 7.043-10.563 15.604-10.563 25.693 0 9.9 3.52 18.566 10.564 25.98l21.7 21.417c7.043 7.043 15.612 10.564 25.697 10.564 10.09 0 18.656-3.52 25.697-10.564L352.025 248.39c7.046-7.423 10.57-16.084 10.57-25.98.002-10.09-3.524-18.655-10.57-25.698z"/>
+</svg>
+
+        </span>
+        <h5>&ldquo;Resources&rdquo;</h5>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="usa-section featured-posts ">
+  <div class="grid-container">
+  
+  <ul class="grid-row grid-gap">
+  
+  </ul>
+  </div>
+</section>
+
+<section class="usa-section bg-primary-dark">
+  <div class="grid-container">
+      <div class="usa-graphic-list__row grid-row grid-gap">
+          <div class="usa-media-block tablet:grid-col">
+            <img class="usa-media-block__img"  src="/site/assets/img/talk-bubble.svg" alt="Alt text">
+            <div class="usa-media-block__body">
+              <p>Work with us to plan successful projects, choose better vendors, build custom software, or learn how to work in new ways.</p>
+              <a class="usa-button usa-button--secondary" href="/site/contact/">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+    
+
+    
+
+    <footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lightest">
+    <div class="grid-container">
+      <div class="grid-row grid-gap padding-y-4">
+        <div class="tablet:grid-col-3">
+          <h4>Work with us</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/about/">About 18F</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/what-we-deliver">Case studies</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/how-we-work/">How we work</a>
+            </li>
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/partnership-principles/">Partnership principles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Resources</h4>
+          <ul class="add-list-reset">
+            <li>
+              <a class="usa-footer__secondary-link" href="/site/blog/">Blog</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/guides/">Guides</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://methods.18f.gov/">18F Methods</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Policies</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/linking-policy/">Linking policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/open-source-policy/">Open source policy</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/vulnerability-disclosure-policy/">Vulnerability disclosure</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/code-of-conduct/">Code of conduct</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-3">
+          <h4>Contact us</h4>
+          <ul class="add-list-reset">
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/contact/">Get in touch</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/about/#for-press">Press</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="https://github.com/18F/18f.gsa.gov/issues/new">Report a bug</a>
+            </li>
+            <li>
+                <a class="usa-footer__secondary-link" href="/site/join/">Join 18F</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__contact-links mobile-lg:grid-col-12">
+          <div class="usa-footer grid-row grid-gap-1">
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/18F">
+                <span>Twitter</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--github" href="https://github.com/18F">
+                <span>Github</span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a class="usa-social-link usa-social-link--linkedin" href="https://www.linkedin.com/company/gsa18f/">
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="Agency identifier"
+  >
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__logos">
+        <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+          <img
+            class="usa-identifier__logo-img"
+            src="/site/assets/img/logos/gsa-logo-w100.png"
+            alt="GSA logo"
+            role="img"
+          />
+        </a>
+      </div>
+      <div class="usa-identifier__identity text-base-lightest" aria-label="Agency description">
+        <p class="usa-identifier__identity-domain">18f.gsa.gov</p>
+        <p class="usa-identifier__identity-disclaimer text-base-lightest">An official website of the
+          <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">
+            GSA’s Technology Transformation Services
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <nav
+    class="usa-identifier__section usa-identifier__section--required-links"
+    aria-label="Important links"
+  >
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about"
+            title="About GSA"
+          >
+            About GSA
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/accessibility-aids"
+            title="Accessibility support"
+          >
+            Accessibility support
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+            title="FOIA requests"
+          >
+            FOIA requests
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/about-us/organization/office-of-civil-rights/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+            title="No FEAR Act data"
+          >
+            No FEAR Act data
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsaig.gov/"
+            title="Office of the Inspector General"
+          >
+            Office of the Inspector General
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/reference/reports/budget-performance"
+            title="Performance reports"
+          >
+             Performance reports
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a
+            class="usa-identifier__required-link usa-link"
+            href="https://www.gsa.gov/website-information/website-policies#privacy"
+            title="Privacy Policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description text-base-lightest">Looking for U.S. government information and services?</div>
+      <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+    </div>
+  </section>
+</div>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/site/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+      var usasearch_config = { siteHandle:"18F-site" };
+
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "//search.usa.gov/javascripts/remote.loader.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+
+//]]>
+</script>
+
+
+
+
+
+
+  </body>
+</html>
